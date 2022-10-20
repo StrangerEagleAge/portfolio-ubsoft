@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+
+body.lock {
+	overflow: hidden;
+}
+
+/* если включить здесь text-decoration: none; и убрать у a,
+то при наведении будет подчёркиваться 
+a:hover {
+	text-decoration: none;
+}*/
+
+p {
+	margin: 0 0 20px 0;
+}
+
+/*End of Обнуление*/
+
+
+
+/*
+._container {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+/*
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	margin: 0 0 50px 0;
+}
+
+.header__container {
+	display: flex;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.header__phone {
+	color: #fff;
+}
+*/
+.content {
+	padding: 130px 0 0 0;
+}
+
+.content__section {
+	margin: 0 0 50px 0;
+}
+
+.content__section_row {
+	margin: 0 -20px 50px;
+}
+
+@media (min-width: 992px) {
+	.content__section_row {
+		display: flex;
+	}
+}
+
+.content__body {
+	flex: 0 1 50%;
+	padding: 0 20px;
+}
+
+.content__title {
+	font-size: 38px;
+	margin: 0 0 0.5em 0;
+}
+
+.content__image img {
+	max-width: 100%;
+}
+
+.content__subtitle {
+	font-size: 30px;
+	margin: 0 0 0.5em 0;
+}
+
+
+
+
+.popup {
+	z-index: 7;
+	position: fixed;
+	line-height: 180%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/*для анимации opacity:0, display:none не анимировать*/
+	opacity: 0;
+	visibility: hidden;
+
+	/*анимируем появление модального окна попап*/
+	transition: all 0.8s ease 0s;
+}
+
+/*делаем открытие по клику - #popup обращается к id=popup*/
+.popup.open {
+	/*для анимации opacity:0, display:none не анимировать*/
+	opacity: 1;
+	visibility: visible;
+}
+
+/*для анимации .popup__content */
+.popup.open .popup__content {
+	/*вариант1*/
+	/*transform: translate(0px, 0px);*/
+	/*вариант2*/
+	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+	opacity: 1;
+}
+
+/*для закрытия не только крестиком - popup__area*/
+.popup__area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+.popup__content {
+	/*
+	background-color: #333;
+	*/
+	/* glassmorfism*/
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(17px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	/* end of glassmorfism*/
+
+	color: #fff;
+	width: 800px;
+	padding: 30px;
+	position: relative;
+
+	border-radius: 7px;
+	border: 2px solid #fff;
+
+	/*анимируем модальное окно попап*/
+	transition: all 0.8s ease 0s;
+	opacity: 0;
+	/*вариант1 будет появляться плавно сверху и также исчезать*/
+	/*transform: translate(0px, -100%);*/
+	/*вариант2 будет появляться плавно с прокруткой и также исчезать*/
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content_image {
+	padding: 0;
+}
+
+.popup__image img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.popup__title {
+	font-size: 38px;
+	margin: 0 0 1em 0;
+}

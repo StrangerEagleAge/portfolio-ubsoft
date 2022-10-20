@@ -1,0 +1,309 @@
+/*** Обнуление
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ ***/
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/*
+html,
+body {
+	width: 100%;
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+*/
+
+
+/*** End of Обнуление ***/
+
+.form {
+	max-width: 550px;
+	margin: 0 auto;
+	color: #fff;
+	padding: 30px 0;
+}
+
+/*убираем выделение форм при пролистывании pg dn и pg up*/
+.form * {
+	outline: none;
+}
+
+
+.form__body {
+	position: relative;
+}
+
+.form__body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(51, 51, 51, 0.85) url('../img/loading.gif') center / 500px no-repeat;
+	/*скрываем иконку*/
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+	/*показываем иконку*/
+	opacity: 1;
+	visibility: visible;
+}
+
+/* _sending {} */
+
+.form__item {
+	margin: 0 0 20px 0;
+}
+
+.form__label {
+	font-size: 18px;
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.form__input {
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	transition: all 0.5s ease 0s;
+}
+
+/*делаем свой outline для ощущения нахождения в форме*/
+.form__input:focus {
+	box-shadow: 0 0 15px #7a956b;
+}
+
+.form__input._error {
+	box-shadow: 0 0 15px red;
+}
+
+textarea.form__input {
+	min-height: 120px;
+	resize: vertical;
+	padding: 20px;
+}
+
+.options {
+	padding: 10px 0 0 0;
+}
+
+.options__item {
+	margin: 0 0 10px 0;
+}
+
+/*скрываем кружки*/
+.options__input {
+	display: none;
+}
+
+.options__input:checked+.options__label::after {
+	transform: scale(1);
+}
+
+.options__label {
+	display: inline-flex;
+	font-size: 16px;
+	line-height: 140%;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+/*рисуем сами кружочки с псевдоэлементом before*/
+.options__label::before {
+	content: "";
+	align-self: flex-start;
+	flex: 0 0 24px;
+	height: 24px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 10px 0 0;
+}
+
+.options__label::after {
+	transition: transform 0.3s ease 0s;
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	background-color: #333;
+	border-radius: 50%;
+	transform: scale(0);
+}
+
+
+
+
+.select {
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+
+
+/*.file {}*/
+
+.file__item {
+	position: relative;
+}
+
+.file__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.file__button {
+	display: inline-flex;
+	min-height: 39px;
+	border-radius: 30px;
+	justify-content: center;
+	align-items: center;
+	background-color: #77608d;
+	padding: 0px 20px;
+}
+
+.file__preview {
+	display: inline-block;
+	max-width: 100px;
+	padding: 10px 0 0 0;
+}
+
+.file__preview img {
+	max-width: 100px;
+}
+
+
+/*
+.checkbox {}
+*/
+.checkbox._error .checkbox__label::before {
+	box-shadow: 0 0 15px red;
+}
+
+.checkbox__input {
+	display: none;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+	transform: scale(1);
+}
+
+.checkbox__label {
+	font-size: 16px;
+	line-height: 140%;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkbox__label::before {
+	content: "";
+	align-self: flex-start;
+	flex: 0 0 24px;
+	height: 24px;
+	background-color: #fff;
+	border-radius: 4px;
+	margin: 0 10px 0 0;
+}
+
+.checkbox__label::after {
+	transition: transform 0.3s ease 0s;
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	background-color: #7a956b;
+	border-radius: 4px;
+	transform: scale(0);
+}
+
+.checkbox__label a {
+	color: #7a956b;
+}
+
+
+.form__button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	background-color: #7a956b;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 0 5px 0 #161b13;
+	transition: background-color 0.5s ease 0s;
+	position: relative;
+	top: 0;
+}
+
+.form__button:hover {
+	background-color: #5f6145;
+	box-shadow: 0 5px 0 #161b13;
+}
+
+.form__button:active {
+	top: 3px;
+	box-shadow: 0 2px 0 #161b13;
+}

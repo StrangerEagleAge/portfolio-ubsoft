@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>UbSoft</title>
+
+	<!-- favicon иконка -->
+	<link rel="shortcut icon" type="img/moon.svg" href="Foto/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="Foto/favicon.ico" />
+
+	<!-- Ключевые слова -->
+	<meta name="keywords" content="Тест файл UbSoft" />
+	<!-- Описание-->
+	<meta name="description" content="Тест файл UbSoft" />
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="modal.css">
+
+
+	<link rel="stylesheet" href="css/stocks.css">
+	<link rel="stylesheet" href="css/form-mail.css">
+	<link rel="stylesheet" href="css/slider.css">
+
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/adaptive-text.css">
+
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- это для подключения своих иконочных шрифтов, которые можно скачать через 
+		консоль в font-awesom а потом с использованием icomoon сохранить их и вставить в проект
+	<link rel="stylesheet" href="css/iconsfont.css">
+	-->
+
+	<!-- Иконки font-awesome -->
+	<link rel="stylesheet" href="css/icon-fonts-all.css">
+
+
+	<!-- Шрифты иконочные: -->
+	<link rel="stylesheet" href="css/iconsfont.css">
+	<!-- Шрифты из макета: -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+	<!-- если не включен js у пользователя -->
+	<noscript>
+		<meta http-equiv="refresh" content="0; URL=" https://strangereagleage.github.io/no-JS/">
+	</noscript>
+	<!-- End of если не включен js у пользователя -->
+	<!-- запрет на нажатие клавиш -->
+	<script src="js/not-save.js"></script>
+	<!-- End of запрет на нажатие клавиш -->
+
+	<!-- значки для контекстного меню на правый клик -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- End of значки для контекстного меню на правый клик -->
+
+	<link rel="stylesheet" href="css/context-menu.css">
+</head>
+
+<body>
+	<!-- контекстное меню на правый клик -->
+	<div id="contextMenu" class="context-menu" style="display: none">
+		<ul class="menu">
+			<li class="share"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+			<li class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li>
+			<li class="link"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> Copy Link Address</a></li>
+			<li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li>
+			<li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li>
+			<li class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+			<li class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li>
+		</ul>
+	</div>
+	<!-- End of контекстное меню на правый клик -->
+
+	<!-- Правая кнопка мыши 
+	<script src="js/mouseRight.js"></script>
+		-->
+
+
+	<div class="wrapper">
+		<!--? 1ый адаптивный блок -->
+		<!--
+			text_center - ставим если нужно текст разместить по центру
+			ставим прямо в section после fullscreen_one
+
+			link_start или link_center - кнопка слева или по центру,
+			а если убрать, то растянется на всю ширину блока
+		-->
+		<section class="fullscreen fone__bg" id="anchor-up">
+			<div class="screen__body text_center">
+
+				<!-- Меню -->
+				<header class="header flex_align between minscreen__text">
+					<div class="header__logo inline">
+						<img src="img/icon.png" alt="Картинка">
+						UbSoft
+					</div>
+					<ul class="header__menu font_weight8">
+						<a class="header__link link1" href="#">Игры</a>
+						<a class="header__link link2" href="#">Магазин</a>
+						<a class="header__link link3" href="#">Информация</a>
+						<a class="header__link link6" href="#">Поддержка</a>
+					</ul>
+					<div class="header__search">
+						&#128269; Поиск
+					</div>
+					<a href="#" class="header__autorized">
+						Jam
+					</a>
+				</header>
+				<!-- End of Меню -->
+
+				<!-- Название -->
+				<div class="name text_shadow">
+					<!--
+					<div class="fullscreen__text">Практический Курс</div>
+					-->
+					<h1 class="header__title">РАГНАРЁК</h1>
+					<div class="fullscreen__text">Вышло новое дополнение к Вальгалла! Примите свою судьбу в
+						обличье Одина в необыкновенном мире из скандинавских мифов.
+					</div>
+					<br><br><br>
+					<a target="_blank" class="fullscreen__link rlink_blue link_center" href="#anchor">
+						Смотреть трейлер
+					</a>
+					<br><br><br>
+				</div>
+				<!-- End of Название -->
+
+
+				<div class="widget"></div>
+
+			</div>
+		</section>
+		<!--? End of 1ый адаптивный блок -->
+
+		<!--? 2ой адаптивный блок БОЛЬШЕ ИГР -->
+		<!--
+			text_center - ставим если нужно текст разместить по центру
+			ставим прямо в div после fullscreen__body 
+
+			link_start или link_center - кнопка слева или по центру,
+			а если убрать, то растянется на всю ширину блока
+		-->
+
+		<section class="screen fullscreen_white">
+			<div class="screen__body text_center text_black">
+
+				<h1 class="header__title">Больше игр</h1>
+
+				<!-- Slider main container -->
+				<div class="swiper mySwiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper fullscreen__text">
+						<!-- Slides -->
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart1.webp" alt="Картинка">
+							</a>
+							<br />
+							Название 1
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart2.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 2
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart3.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 3
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart4.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 4
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart5.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 5
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart6.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 6
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart7.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 7
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart8.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 8
+						</div>
+						<div class="swiper-slide column-slide">
+							<a href="#image" class="content__image popup-link">
+								<img src="img/cart9.jpg" alt="Картинка">
+							</a>
+							<br />
+							Название 9
+						</div>
+						...
+					</div>
+					<!-- If we need pagination 
+					<div class="swiper-pagination"></div>
+					-->
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<!-- If we need scrollbar 
+					<div class="swiper-scrollbar"></div>
+					-->
+
+				</div>
+				<a target="_blank" class="fullscreen__link rlink_blue link_center" href="#anchor">
+					Посмотреть все игры
+				</a>
+
+
+
+			</div>
+		</section>
+		<!--? End of 2ой адаптивный блок БОЛЬШЕ ИГР -->
+
+
+
+		<!--?  -->
+		<section class="screen bg-color_white">
+			<div class="screen__body text_black">
+
+
+				<h1 class="header__text text_center uppercase_text">Свежие Новости</h1>
+
+				<!-- Блок с вкладками -->
+				<div class="tabs">
+
+					<div class="tabs__nav">
+						<a class="tabs__link tabs__link_active" href="#content-1">Все</a>
+						<a class="tabs__link" href="#content-2">Игра</a>
+						<!--
+						<a class="tabs__link" href="#content-3">Компании</a>
+						<a class="tabs__link" href="#content-4">Магазины</a>
+						<a class="tabs__link" href="#content-5">Блоги</a>
+						-->
+					</div>
+
+					<div class="tabs__content">
+						<div class="tabs__pane tabs__pane_show" id="content-1">
+
+							<div class="flex flex_between padding">
+
+								<div class="tab_left">
+									<a href="#image" class="content__image popup-link">
+										<img src="img/tab1.jpg" alt="Картинка">
+									</a>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="column padding_text">
+											<data class="data minscreen__text">
+												2022
+											</data>
+											<div class="fullscreen__text ">
+												Описание обновления
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="tab_right column">
+									<div class="flex">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Новости о борьбе с мошенничеством
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Новый режим "аркада" - "БадаБум!"
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Сезон 21 власть
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tabs__pane" id="content-2">
+							Содержимое 2...
+
+							<div class="flex flex_between padding">
+
+								<div class="tab_left">
+									<div class="flex">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Новости о борьбе с мошенничеством
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="column padding_text">
+											<data class="data minscreen__text">
+												2022
+											</data>
+											<div class="fullscreen__text ">
+												Описание обновления
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="column padding_text">
+											<data class="data minscreen__text">
+												2022
+											</data>
+											<div class="fullscreen__text ">
+												Описание обновления
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+
+
+								<div class="tab_right column">
+									<div class="flex">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Новости о борьбе с мошенничеством
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Новый режим "аркада" - "БадаБум!"
+											</div>
+										</div>
+									</div>
+
+									<div class="flex padding_up">
+										<a href="#image" class="tab_50perc content__image popup-link">
+											<img src="img/tab1.jpg" alt="Картинка">
+										</a>
+
+										<div class="fullscreen__text padding_text">
+											<div class="column">
+												<data class="data minscreen__text">
+													2022
+												</data>
+												Сезон 21 власть
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+						</div>
+						<div class="tabs__pane" id="content-3">
+							Содержимое 3...
+						</div>
+						<div class="tabs__pane" id="content-4">
+							Содержимое 4...
+						</div>
+						<div class="tabs__pane" id="content-5">
+							Содержимое 5...
+						</div>
+
+						<a target="_blank" class="fullscreen__link rlink_blue link_center" href="#anchor">
+							Посмотреть все Новости
+						</a>
+					</div>
+
+
+				</div>
+		</section>
+
+
+		<script src="js/tabs.js"></script>
+
+
+
+
+
+		<section class="screen bg-color_white">
+			<div class="screen__body text_center">
+
+
+				<div class="header__title text_black uppercase_text">
+					"ЗА КУЛИСАМИ"
+				</div>
+
+				<div class="flex">
+
+					<div class="block block1">
+						<a href="#image" class="content__image popup-link">
+							<img src="img/cart5.jpg" alt="Картинка">
+						</a>
+					</div>
+					<div class="block block2">
+						<a href="#image" class="content__image popup-link">
+							<img src="img/cart9.jpg" alt="Картинка">
+						</a>
+					</div>
+					<div class="block block3">
+						<a href="#image" class="content__image popup-link">
+							<img src="img/cart3.jpg" alt="Картинка">
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="screen bg-color__darkblue triangle">
+			<div class="screen__body text_center">
+
+
+				<div class="header__title">
+					Коннект
+				</div>
+				<div class="fullscreen__text">
+					Вступайте В Наше Сообщество! | PC | Консоль | Мобильное Устройство | Браузер
+				</div>
+				<br><br><br>
+				<a target="_blank" class="fullscreen__link rlink_blue link_center" href="#anchor">
+					Узнать больше
+				</a>
+				<br><br><br>
+
+			</div>
+		</section>
+
+
+		<!-- Меню -->
+		<div class="header flex between minscreen__text">
+			<div class="header__logo inline">
+				Посетите наши соцсети
+			</div>
+			<ul class="header__menu font_weight8">
+				<a class="header__link link1" href="#">Vk</a>
+				<a class="header__link link2" href="#">Telegram</a>
+				<a class="header__link link3" href="#">YouTube</a>
+			</ul>
+			<!--
+		<a href="#" class="header__autorized">
+			Jam
+		</a>
+		-->
+		</div>
+		<!-- End of Меню -->
+
+
+		<!--? 13ый адаптивный блок ФОРМА СВЯЗИ -->
+		<section class="screen bg-color__black">
+			<div class="screen__body">
+
+
+
+
+				<div class="flex">
+
+					<div class="block block1 column-slide uppercase_text">
+						<a target="_blank" class="text__link" href="#anchor">
+							ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							УСЛОВИЯ ИСПОЛЬЗОВАНИЯ
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							НАСТРОЙКА ФАЙЛОВ COOKIE
+						</a>
+					</div>
+					<div class="block block2 column-slide">
+						<a target="_blank" class="text__link" href="#anchor">
+							CONNECT
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							HELP
+						</a>
+					</div>
+					<div class="block block3 column-slide">
+						<a target="_blank" class="text__link" href="#anchor">
+							ПРЕССА
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							ИНВЕСТОРАМ
+						</a>
+					</div>
+					<div class="block block2 column-slide">
+
+
+						<a target="_blank" class="text__link" href="#anchor">
+							КОМПАНИЯ
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							ВАКАНСИИ
+						</a>
+						<a target="_blank" class="text__link" href="#anchor">
+							ОФИСЫ
+						</a>
+					</div>
+					<div class="block block3 column-slide">
+						© 2022 Blabla Entertainment. All Rights Reserved. Our logo are trademarks
+						of Blabla Entertainment in the all worlds. and/or other countries.
+					</div>
+
+				</div>
+
+
+
+				<!--
+			<div class="form">
+				<form action="#" id="form" class="form__body">
+					<div class="text_center">
+						<h1 class="form__title">ОСТАВИТЬ ЗАЯВКУ НА УЧАСТИЕ</h1>
+						<p>Нумерология. Люди в цифрах - 12 000 руб.</p>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя*:</label>
+						<input id="formName" type="text" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*:</label>
+						<input id="formEmail" type="text" name="email" class="form__input _req _email">
+					</div>
+
+					
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Сообщение:</label>
+						<textarea name="message" id="formMessage" class="form__input"></textarea>
+					</div>
+
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+							<label for="formAgreement" class="checkbox__label">
+								<span>Я даю своё согласие на обработку персональных
+									данных в соответствии с <a href="">условиями</a>*
+								</span>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="form__button">Отправить</button>
+				</form>
+			</div>
+			
+
+
+			<br><br><br>
+
+			<a href="#autor" class="content__image popup-link fullscreen__link link_center hover_underline hover_blue">
+				Сайт разработал - Вадим
+			</a>
+		
+
+			<div id="autor" class="popup">
+				<div class="popup__body">
+					<div class="popup__content">
+						<a href="#header" class="popup__close close-popup"> X </a>
+						<div class="popup__title">
+							<h2>Разработчик сайтов Вадим</h2>
+						</div>
+						<div class="popup__title">
+							<h3>Для связи:</h3>
+						</div>
+						<div class="popup__text">
+							<p class="fullscreen__text text-shadow">Яндекс почта: <a
+									class="link__line link_white hover_underline"
+									href="mailto:Vadim-fls.N@yandex.ru">Vadim-fls.N@yandex.ru</a>
+							</p>
+							<p class="fullscreen__text text-shadow">WhatsApp: +7-950-203-13-59</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+
+
+
+			</div>
+
+	</div>
+	</section>
+	<!--? END of 13ый адаптивный блок ФОРМА СВЯЗИ -->
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<!--? END of wrapper -->
+	<!-- ? Якорь -->
+	<a class="footer__circle" href="#anchor-up">
+		<div class="anchor-up">
+			<h3 class="anchor-simbol">&#8679;
+			</h3>
+		</div>
+	</a>
+	<!-- ? End of Якорь -->
+	<!-- ? SCRIPTS ! -->
+	<script src="js/popups.js"></script>
+
+	<script src="js/swiper.js"></script>
+
+
+
+	<script src="js/slider.js"></script>
+	<script src="js/anchor.js"></script>
+	<!-- ?END of SCRIPTS ! -->
+</body>
+
+</html>
