@@ -1,4 +1,2 @@
 # Ubsoft
-## Интернет-магазин - Макет
-
-[Демо:](https://strangereagleage.github.io/portfolio-ubsoft/)
+## Интернет-магазин - Макет [Посмотреть](https://strangereagleage.github.io/portfolio-ubsoft/)
